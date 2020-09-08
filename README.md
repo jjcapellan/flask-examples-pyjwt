@@ -2,10 +2,10 @@
 # FLASK-EXAMPLES-PYJWT 
 Simple example of **PyJWT** use in flask.
 This example has 4 routes:
-* /login : client sends username and password in plain text in JSON format ({username:'name',password:'pass'}) (POST). If login is correct, the client receives the JWT token.
-* /unprotected : this route doesn't need credentials.
-* /onlyadmins: Only logged user with "admin" rol can acces. Checks the request header named "Authorization" which contains the JWT token obtained after succes login.
-* /onlyusers: Only logged user with "user" rol can acces. Checks the request header named "Authorization" which contains the JWT token obtained after succes login.
+* */login* : client sends username and password in plain text in JSON format ({username:'name',password:'pass'}) (POST). If login is correct, the client receives the JWT token.
+* */unprotected* : this route doesn't need credentials.
+* */onlyadmins*: Only logged user with "admin" rol can acces. Checks the request header named "Authorization" which contains the JWT token obtained after succes login.
+* */onlyusers*: Similar to previous route. Only "user" rol is accepted.
 
 ## How to use
 1. Clone or download this repository
